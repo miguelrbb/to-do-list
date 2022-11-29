@@ -55,8 +55,10 @@ app.post("/work", function(req, res) {
   res.redirect("/work");
 })
 
-app.post("/404", function(req, res) {
-  res.redirect("/");
+app.use(function(req, res, next) {
+  res.status(404);
+
+  res.sendFile(__dirname + "/404.html")
 })
 
 app.listen(process.env.PORT || 3000, function() {

@@ -7,6 +7,10 @@ body {
   background: linear-gradient(90deg, rgba(238,149,187,1) 18%, rgba(154,113,244,1) 100%);
 }
 
+.div-404 {
+  margin: 100px 30%;
+}
+
 main {
   margin: 0 auto;
   padding: 80px 0;
